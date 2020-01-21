@@ -1,0 +1,40 @@
+.title1 {
+    color: #d54d7b;
+    font-family: "Great Vibes", cursive;
+    font-size: 25px;
+    line-height: 30px;
+    font-weight: normal;
+    margin-bottom: 0px;
+    margin-top: 0px;
+    text-align: left;
+    text-shadow: 0 1px 1px #fff; }
+
+.title2 {
+        color: #b48608;
+        font-family: 'Droid serif', serif;
+        font-size: 25x;
+        font-weight: normal;
+        font-style: italic;
+        line-height: 30px;
+        margin: 0 0px;
+        text-align: left; }
+
+.textadd {
+         background-color: transparent;
+         font-family: 'Droid serif', serif;
+         color: black;
+         padding: 10px 80px;
+         text-align: right;
+         text-decoration: none;
+         display: inline-block;
+         font-size: 20px;
+         margin: 1px 2px;
+         }
+
+.tablewidth{
+    width:300px
+    }
+
+.body {
+        padding-top: 130px;
+        }

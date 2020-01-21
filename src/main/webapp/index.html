@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Home Page</title>
+    <link rel="stylesheet" href=
+            "https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <script src=
+                    "https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <script src=
+                    "https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.bundle.min.js"></script>
+
+    <link href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" rel="stylesheet">
+    <meta   name="viewport"
+            content="width=device-width,
+            initial-scale=1">
+</head>
+
+<body>
+<div class="container">
+    <nav class="navbar fixed-top navbar-light bg-light">
+        <p class="title1">Learning Management System</p>
+        <a class='title1 navbar-brand wbdv-label wbdv-course-manager' href='index.html' ><strong>Course Manager</strong></a>
+
+        <div>
+            <form class="form-inline">
+                <input class="form-control title2 textadd wbdv-field wbdv-new-course" type="text" placeholder="New Course Title">
+                <button class="btn btn-outline-success wbdv-button wbdv-add-course" type="button">+</button>
+            </form>
+        </div>
+
+        <button class="navbar-toggler wbdv-field wbdv-hamburger"
+                type="button"
+                data-toggle="collapse"
+                data-target="#navbarNavDropdown">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse text-right"
+            id="navbarNavDropdown">
+            <ul class="navbar-nav">
+                <li class="nav-item active">
+                    <a class="nav-link" href="index.html">Home</a></li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="./login/login.template.client.html">Login</a></li>
+                <li class="nav-item active">
+                    <a class="nav-link" href="./register/register.template.client.html">Register</a></li>
+                <li class="nav-item active">
+                <a class="nav-link" href="./profile/profile.template.client.html">Profile</a></li>
+            </ul>
+        </div>
+    </nav>
+</div>
+
+<div class="container body">
+    <nav class="navbar navbar-light bg-light">
+        <h5 class="text-muted">Today</h5>
+    </nav>
+    <! --first table-->
+    <div class="table-responsive-sm">
+
+        <table class="table">
+            <thead>
+            <tr>
+                <th class="tablewidth wbdv-header wbdv-title">Title
+                    <i class="far fa-file"></i>
+                </th>
+                <th class="wbdv-header wbdv-owner">
+                    Owned by me
+                    <button type="button">
+                        <i class="fas fa-caret-down"></i>
+                    </button>
+                </th>
+                <th class="wbdv-header wbdv-last-modified">Last modified by me
+                    <i class="fas fa-clock"></i>
+                </th>
+                <th class="wbdv-header wbdv-sort">
+                    <button type="button" class="wbdv-button wbdv-grid-layout">
+                        <i class="fas fa-grip-horizontal"></i>
+                    </button>
+                    or
+                    <button type="button" class="wbdv-button wbdv-list-layout">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    Sort by&nbsp;
+                    <button type="button">
+                        <i class="fas fa-sort-alpha-down"></i>
+                    </button>
+                </th>
+            </tr>
+            </thead>
+
+            <tbody>
+            <tr class="wbdv-row wbdv-course">
+                <td class="wbdv-row wbdv-title">
+                    <i class="fas fa-file-alt wbdv-row wbdv-icon"></i>
+                    <a href="">CS5500 Software Engineering</a>
+                </td>
+                <td class="wbdv-row wbdv-owner">
+                    me
+                </td>
+                <td class="wbdv-row wbdv-modified-date">
+                    6:45 PM
+                </td>
+                <td align="right">
+                    <button type="button" class="wbdv-row wbdv-button wbdv-delete">
+                        <i class="fas fa-trash-alt"></i>
+                    </button>
+                </td>
+            </tr>
+            <tr class="wbdv-row wbdv-course">
+                <td class="wbdv-row wbdv-title">
+                    <i class="fas fa-file-alt wbdv-row wbdv-icon"></i>
+                    <a href="courseeditor/CS5610.courseeditor.template.html">CS5610 Web Development</a>
+                </td>
+                <td class="wbdv-row wbdv-owner">
+                    me
+                </td>
+                <td class="wbdv-row wbdv-modified-date">
+                    6:45 PM
+                </td>
+                <td align="right">
+                    <button type="button" class="wbdv-row wbdv-button wbdv-delete">
+                        <i class="fas fa-trash-alt"></i>
+                    </button>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+</body>
+</html>
