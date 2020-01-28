@@ -41,4 +41,5 @@ function AdminUserServiceClient() {
             method: "DELETE"
         })
     }
+
 }
