@@ -69,35 +69,35 @@ $(function () {
 
     function updateUser() {
         const temp_username = usernameFld.val()
-        usernameFld.val("")
         const temp_password = passwordFld.val()
-        passwordFld.val("")
         const temp_firstname = firstNameFld.val()
-        firstNameFld.val("")
         const temp_lastname = lastNameFld.val()
-        lastNameFld.val("")
         const temp_role = roleFld.val()
         const userinfo = {username:temp_username,password:temp_password,firstname:temp_firstname,lastname:temp_lastname,role:temp_role}
         userService.updateUser(currentUserId, userinfo).then(newUser => {
                 findAllUsers()
                 })
+        usernameFld.val("")
+        passwordFld.val("")
+        firstNameFld.val("")
+        lastNameFld.val("")
         }
     updateBtn.click(updateUser);
 
     function createUser(){
         const temp_username = usernameFld.val()
-        usernameFld.val("")
         const temp_password = passwordFld.val()
-        passwordFld.val("")
         const temp_firstname = firstNameFld.val()
-        firstNameFld.val("")
         const temp_lastname = lastNameFld.val()
-        lastNameFld.val("")
         const temp_role = roleFld.val()
         var userinfo = {username: temp_username,password: temp_password,firstname: temp_firstname,lastname: temp_lastname,role:temp_role}
         userService.createUser(userinfo).then(newUser => {
             findAllUsers()
             })
+        usernameFld.val("")
+        passwordFld.val("")
+        firstNameFld.val("")
+        lastNameFld.val("")
         }
     createBtn.click(createUser)
 
